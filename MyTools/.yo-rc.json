@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "MyTools",
+    "componentType": "adaptiveCardExtension",
+    "aceTemplateType": "PrimaryText",
+    "componentName": "myApprovals",
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "version": "1.15.2",
+    "libraryName": "my-tools",
+    "libraryId": "4e237452-917b-4faf-a703-f87f0543466f",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionShortDescription": "MyTools description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false
+  }
+}

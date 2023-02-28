@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "my-tasks-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/myTasks/MyTasksAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/myTasks/MyTasksAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    },
+    "my-feed-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/myFeed/MyFeedAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/myFeed/MyFeedAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    },
+    "my-approvals-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/myApprovals/MyApprovalsAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/myApprovals/MyApprovalsAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MyTasksAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myTasks/loc/{locale}.js",
+    "MyFeedAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myFeed/loc/{locale}.js",
+    "MyApprovalsAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myApprovals/loc/{locale}.js"
+  }
+}
