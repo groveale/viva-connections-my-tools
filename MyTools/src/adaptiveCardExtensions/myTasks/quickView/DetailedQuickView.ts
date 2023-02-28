@@ -3,7 +3,7 @@ import * as strings from 'MyTasksAdaptiveCardExtensionStrings';
 import { IMyTasksAdaptiveCardExtensionProps, IMyTasksAdaptiveCardExtensionState } from '../MyTasksAdaptiveCardExtension';
 
 export interface IDetailedQuickViewData {
-  task: object;
+  task: any;
   strings: IMyTasksAdaptiveCardExtensionStrings;
 }
 
@@ -13,11 +13,11 @@ export class DetailedQuickView extends BaseAdaptiveCardView<
     IDetailedQuickViewData
 > {
   public get data(): IDetailedQuickViewData {
-    // const tasks = this.state.outstandingTasks.filter((task) => {
-    //     return task.key === this.state.currentTaskKey;
-    //   });
+    const tasks = this.state.outstandingTasks.filter((task: any) => {
+        return task.id === this.state.currentTaskKey;
+      });
     return {
-      task: this.state.outstandingTasks[2],
+      task: tasks[0],
       strings: strings,
     };
   }
@@ -25,4 +25,17 @@ export class DetailedQuickView extends BaseAdaptiveCardView<
   public get template(): ISPFxAdaptiveCard {
     return require('./template/DetailedViewTemplate.json');
   }
+
+  public async onAction(action: IActionArguments): Promise<void> {
+    if ((<ISubmitActionArguments>action).type === 'Submit') {
+      const submitAction = <ISubmitActionArguments>action;
+      const { id, taskKey } = submitAction.data;
+      if (id === 'closeTask') {
+        this.setState({ 
+            outstandingTasks: this.state.outstandingTasks.filter((item: any) => item.id !== taskKey)
+        });
+        this.quickViewNavigator.pop();
+        }
+    }
+    }
 }

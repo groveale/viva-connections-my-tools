@@ -114,7 +114,7 @@
                                                         {
                                                             "type": "Action.OpenUrl",
                                                             "title": "Chat with ${task.reporter.name}",
-                                                            "url": "https://www.bing.com/",
+                                                            "url": "sip:${task.reporter.email}",
                                                             "iconUrl": "https://reckittstorage.blob.core.windows.net/viva-connections-icons/teams.svg"
                                                         }
                                                     ]
@@ -231,8 +231,8 @@
                   "type": "Action.Submit",
                   "title": "Mark task complete on ${task.source.name}",
                   "data": {
-                      "id": "close",
-                      "task": "${task}"
+                      "id": "closeTask",
+                      "taskKey": "${task.id}"
                   }
               },
               {
