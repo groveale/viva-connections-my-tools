@@ -1,21 +1,16 @@
 {
     "numberOfTasks": 3,
-    "strings": {
-        "OpenedLabel": "Opened",
-        "OverdueLabel": "days overdue",
-        "QuickViewDescription": "Please review and action your assigned tasks"
-    },
-    "tasks": [
+    "approvals": [
         {
             "id": "10000",
             "created": "2023-02-03T17:26:03+00:00",
-            "title": "Reset password for SQL admin account",
+            "title": "Accept your new reward package",
             "description": "",
             "statusText": "In Progress",
             "statusCategoryKey": "new",
             "source": {
-                "name": "ServiceNow",
-                "avatarUri": "https://reckittstorage.blob.core.windows.net/viva-connections-icons/servicenow.svg"
+                "name": "Adobe Sign",
+                "avatarUri": "https://reckittstorage.blob.core.windows.net/viva-connections-icons/adobe.svg"
             },
             "resolved": false,
             "duedate": null,
@@ -30,13 +25,13 @@
         {
             "id": "10001",
             "created": "2023-01-03T17:26:03+00:00",
-            "title": "Update readme on Viva Connections demo repo",
+            "title": "Approve access request for new member in your Teams",
             "description": "",
             "statusText": "In Progress",
             "statusCategoryKey": "new",
             "source": {
-                "name": "GitHub",
-                "avatarUri": "https://reckittstorage.blob.core.windows.net/viva-connections-icons/github.svg"
+                "name": "Approvals",
+                "avatarUri": "https://reckittstorage.blob.core.windows.net/viva-connections-icons/approvals.png"
             },
             "resolved": false,
             "duedate": null,
@@ -51,13 +46,13 @@
         {
             "id": "10002",
             "created": "2023-01-05T13:30:05+00:00",
-            "title": "Investigate Azure Function issue",
+            "title": "Approve expense report",
             "description": "",
             "statusText": "In Progress",
             "statusCategoryKey": "indeterminate",
             "source": {
                 "name": "Jira",
-                "avatarUri": "https://reckittstorage.blob.core.windows.net/viva-connections-icons/jira.svg"
+                "avatarUri": "https://reckittstorage.blob.core.windows.net/viva-connections-icons/concur.png"
             },
             "resolved": false,
             "duedate": "2023-01-06T00:00:00+00:00",
@@ -72,38 +67,18 @@
         {
             "id": "10003",
             "created": "2023-01-05T13:30:05+00:00",
-            "title": "Update Project Archimedes status",
-            "description": "Update milestones relating to the Project Archimedes GA of the file data sets",
+            "title": "A leave request requires your approval",
+            "description": "Approve leave request for Alex",
             "statusText": "In Progress",
             "statusCategoryKey": "indeterminate",
             "source": {
-                "name": "Monday.com",
-                "avatarUri": "https://reckittstorage.blob.core.windows.net/viva-connections-icons/monday.svg",
+                "name": "SAP SF",
+                "avatarUri": "https://reckittstorage.blob.core.windows.net/viva-connections-icons/sap.svg",
                 "uri": "https://monday.com/"
             },
             "resolved": false,
             "duedate": "2023-01-06T00:00:00+00:00",
             "overDueDays": "53",    
-            "reporter": {
-                "name": "Alex Grover",
-                "avatarUri": "https://secure.gravatar.com/avatar/ef9c26e764df8eeed6304f719f580706?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAG-4.png",
-                "email": "alexgrover@microsoft.com",
-                "timeZone": "Europe/London"
-            }
-        },
-        {
-            "id": "10004",
-            "created": "2023-01-05T14:28:20+00:00",
-            "title": "Get back to Andy F on Amplify extensibility",
-            "description": "",
-            "statusText": "In Progress",
-            "source": {
-                "name": "Microsoft Todo",
-                "avatarUri": "https://reckittstorage.blob.core.windows.net/viva-connections-icons/mstodo.svg"
-            },
-            "resolved": false,
-            "duedate": "2023-01-03T00:00:00+00:00",
-            "overDueDays": "56",
             "reporter": {
                 "name": "Alex Grover",
                 "avatarUri": "https://secure.gravatar.com/avatar/ef9c26e764df8eeed6304f719f580706?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAG-4.png",

@@ -1,11 +1,17 @@
 define([], function() {
   return {
-    "PropertyPaneDescription": "Write 1-3 sentences describing the functionality of this component.",
-    "TitleFieldLabel": "Card title",
-    "Title": "Adaptive Card Extension",
-    "SubTitle": "Quick view",
-    "PrimaryText": "SPFx Adaptive Card Extension",
-    "Description": "Create your SPFx Adaptive Card Extension solution!",
-    "QuickViewButton": "Quick view"
+    "PropertyPaneDescription": "Simulation for showing My Tasks",
+    "GroupName": "Configuration",
+    "TitleFieldLabel": "Card Title",
+    "IconPropertyFieldLabel": "Card Icon",
+    "QuickViewButtonText":"View Approvals",
+    "CardViewTextSingular":"approval",
+    "CardViewTextPlural":"approvals",
+    "CardViewTextZero":"😎",
+    "CardViewDescriptionZero":"You currently have no approvals to action",
+    "CardViewDescription":"Get up to date with your approvals.",
+    "QuickViewDescription": "Review your outstanding Approvals",
+    "OpenedLabel": "Opened",
+    "OverdueLabel": "days overdue"
   }
 });

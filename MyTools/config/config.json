@@ -25,12 +25,21 @@
           "manifest": "./src/adaptiveCardExtensions/myApprovals/MyApprovalsAdaptiveCardExtension.manifest.json"
         }
       ]
+    },
+    "stock-ticker-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/stockTicker/StockTickerAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/stockTicker/StockTickerAdaptiveCardExtension.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "MyTasksAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myTasks/loc/{locale}.js",
     "MyFeedAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myFeed/loc/{locale}.js",
-    "MyApprovalsAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myApprovals/loc/{locale}.js"
+    "MyApprovalsAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myApprovals/loc/{locale}.js",
+    "StockTickerAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/stockTicker/loc/{locale}.js"
   }
 }

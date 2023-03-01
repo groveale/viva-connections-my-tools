@@ -24,7 +24,7 @@ export class CardView extends BasePrimaryTextCardView<IMyTasksAdaptiveCardExtens
   }
 
   public get data(): IPrimaryTextCardParameters {
-    let primaryText: string = strings.CardViewNoTasks;
+    let primaryText: string = strings.CardViewZero;
     if (this.state.outstandingTasks.length > 1) {
       primaryText = `${this.state.outstandingTasks.length.toString()} ${strings.CardViewTextPlural}`;
     } else {
@@ -39,9 +39,9 @@ export class CardView extends BasePrimaryTextCardView<IMyTasksAdaptiveCardExtens
 
   public get onCardSelection(): IQuickViewCardAction | IExternalLinkCardAction | undefined {
     return {
-      type: 'ExternalLink',
+      type: 'QuickView',
       parameters: {
-        target: 'https://www.bing.com'
+        view: QUICK_VIEW_REGISTRY_ID
       }
     };
   }

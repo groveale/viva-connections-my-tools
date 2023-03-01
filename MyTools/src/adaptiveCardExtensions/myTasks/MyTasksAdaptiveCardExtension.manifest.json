@@ -18,7 +18,7 @@
     "group": { "default": "Dashboard" },
     "title": { "default": "MyTasks" },
     "description": { "default": "MyTasks description" },
-    "officeFabricIconFontName": "SharePointLogo",
+    "officeFabricIconFontName": "TaskList",
     "properties": {
       "title": "MyTasks"
     },

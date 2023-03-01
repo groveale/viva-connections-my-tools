@@ -6,7 +6,7 @@ declare interface IMyTasksAdaptiveCardExtensionStrings {
   QuickViewButtonText: string;
   CardViewTextSingular: string;
   CardViewTextPlural: string;
-  CardViewNoTasks: string;
+  CardViewZero: string;
   CardViewDescription: string;
   QuickViewDescription: string;
   OpenedLabel: string;

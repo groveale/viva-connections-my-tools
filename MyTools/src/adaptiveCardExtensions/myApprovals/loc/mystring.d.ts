@@ -1,14 +1,20 @@
-declare interface IMyApprovalsAdaptiveCardExtensionStrings {
+declare interface MyApprovalsAdaptiveCardExtensionStrings {
   PropertyPaneDescription: string;
+  GroupName: string;
   TitleFieldLabel: string;
-  Title: string;
-  SubTitle: string;
-  PrimaryText: string;
-  Description: string;
-  QuickViewButton: string;
+  IconPropertyFieldLabel: string;
+  QuickViewButtonText: string;
+  CardViewTextSingular: string;
+  CardViewTextPlural: string;
+  CardViewZero: string;
+  CardViewDescriptionZero: string;
+  CardViewDescription: string;
+  QuickViewDescription: string;
+  OpenedLabel: string;
+  OverdueLabel: string;
 }
 
 declare module 'MyApprovalsAdaptiveCardExtensionStrings' {
-  const strings: IMyApprovalsAdaptiveCardExtensionStrings;
+  const strings: MyApprovalsAdaptiveCardExtensionStrings;
   export = strings;
 }
