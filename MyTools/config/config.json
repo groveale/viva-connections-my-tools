@@ -33,6 +33,22 @@
           "manifest": "./src/adaptiveCardExtensions/stockTicker/StockTickerAdaptiveCardExtension.manifest.json"
         }
       ]
+    },
+    "my-commute-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/myCommute/MyCommuteAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/myCommute/MyCommuteAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    },
+    "my-help-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/myHelp/MyHelpAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/myHelp/MyHelpAdaptiveCardExtension.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -40,6 +56,8 @@
     "MyTasksAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myTasks/loc/{locale}.js",
     "MyFeedAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myFeed/loc/{locale}.js",
     "MyApprovalsAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myApprovals/loc/{locale}.js",
-    "StockTickerAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/stockTicker/loc/{locale}.js"
+    "StockTickerAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/stockTicker/loc/{locale}.js",
+    "MyCommuteAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myCommute/loc/{locale}.js",
+    "MyHelpAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myHelp/loc/{locale}.js"
   }
 }

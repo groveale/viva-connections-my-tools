@@ -28,7 +28,7 @@ export class QuickView extends BaseAdaptiveCardView<
   }
 
   public get template(): ISPFxAdaptiveCard {
-    return require('./template/MyApprovalsTemplate.json');
+    return require('./template/MyApprovalsAlternate.json');
   }
 
   public async onAction(action: IActionArguments): Promise<void> {

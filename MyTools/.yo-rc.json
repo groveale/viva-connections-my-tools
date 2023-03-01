@@ -4,7 +4,7 @@
     "solutionName": "MyTools",
     "componentType": "adaptiveCardExtension",
     "aceTemplateType": "PrimaryText",
-    "componentName": "StockTicker",
+    "componentName": "MyHelp",
     "plusBeta": false,
     "isCreatingSolution": false,
     "version": "1.15.2",
