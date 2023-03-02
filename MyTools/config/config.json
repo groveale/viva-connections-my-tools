@@ -49,6 +49,22 @@
           "manifest": "./src/adaptiveCardExtensions/myHelp/MyHelpAdaptiveCardExtension.manifest.json"
         }
       ]
+    },
+    "my-praise-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/myPraise/MyPraiseAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/myPraise/MyPraiseAdaptiveCardExtension.manifest.json"
+        }
+      ]
+    },
+    "my-onboarding-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/myOnboarding/MyOnboardingAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/myOnboarding/MyOnboardingAdaptiveCardExtension.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -58,6 +74,8 @@
     "MyApprovalsAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myApprovals/loc/{locale}.js",
     "StockTickerAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/stockTicker/loc/{locale}.js",
     "MyCommuteAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myCommute/loc/{locale}.js",
-    "MyHelpAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myHelp/loc/{locale}.js"
+    "MyHelpAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myHelp/loc/{locale}.js",
+    "MyPraiseAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myPraise/loc/{locale}.js",
+    "MyOnboardingAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myOnboarding/loc/{locale}.js"
   }
 }
