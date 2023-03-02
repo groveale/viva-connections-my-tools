@@ -3,8 +3,7 @@ import * as strings from 'MyOnboardingAdaptiveCardExtensionStrings';
 import { IMyOnboardingAdaptiveCardExtensionProps, IMyOnboardingAdaptiveCardExtensionState } from '../MyOnboardingAdaptiveCardExtension';
 
 export interface IQuickViewData {
-  subTitle: string;
-  title: string;
+  onboardingData: object;
 }
 
 export class QuickView extends BaseAdaptiveCardView<
@@ -14,8 +13,7 @@ export class QuickView extends BaseAdaptiveCardView<
 > {
   public get data(): IQuickViewData {
     return {
-      subTitle: strings.SubTitle,
-      title: strings.Title
+      onboardingData: this.state.onboardingData
     };
   }
 
