@@ -2,13 +2,15 @@ import {
   BasePrimaryTextCardView,
   IPrimaryTextCardParameters,
   IExternalLinkCardAction,
+  BaseImageCardView,
+  IImageCardParameters,
   IQuickViewCardAction,
   ICardButton
 } from '@microsoft/sp-adaptive-card-extension-base';
 import * as strings from 'MyTasksAdaptiveCardExtensionStrings';
 import { IMyTasksAdaptiveCardExtensionProps, IMyTasksAdaptiveCardExtensionState, QUICK_VIEW_REGISTRY_ID } from '../MyTasksAdaptiveCardExtension';
 
-export class CardView extends BasePrimaryTextCardView<IMyTasksAdaptiveCardExtensionProps, IMyTasksAdaptiveCardExtensionState> {
+export class CardView extends BaseImageCardView<IMyTasksAdaptiveCardExtensionProps, IMyTasksAdaptiveCardExtensionState> {
   public get cardButtons(): [ICardButton] | [ICardButton, ICardButton] | undefined {
     return [
       {
@@ -23,7 +25,7 @@ export class CardView extends BasePrimaryTextCardView<IMyTasksAdaptiveCardExtens
     ];
   }
 
-  public get data(): IPrimaryTextCardParameters {
+  public get data(): IImageCardParameters {
     let primaryText: string = strings.CardViewZero;
     if (this.state.outstandingTasks.length > 1) {
       primaryText = `${this.state.outstandingTasks.length.toString()} ${strings.CardViewTextPlural}`;
@@ -32,7 +34,8 @@ export class CardView extends BasePrimaryTextCardView<IMyTasksAdaptiveCardExtens
     }
     return {
       primaryText: primaryText,
-      description: strings.CardViewDescription,
+      imageUrl: "https://reckittstorage.blob.core.windows.net/viva-connections-icons/mytasksimage.svg",
+      //description: strings.CardViewDescription,
       title: this.properties.title
     };
   }

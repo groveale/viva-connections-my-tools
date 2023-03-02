@@ -1,16 +1,18 @@
 import {
-  BasePrimaryTextCardView,
-  IPrimaryTextCardParameters,
-  IImageCardParameters,
   BaseImageCardView,
+  IImageCardParameters,
   IExternalLinkCardAction,
   IQuickViewCardAction,
   ICardButton
 } from '@microsoft/sp-adaptive-card-extension-base';
-import * as strings from 'MyOnboardingAdaptiveCardExtensionStrings';
-import { IMyOnboardingAdaptiveCardExtensionProps, IMyOnboardingAdaptiveCardExtensionState, QUICK_VIEW_REGISTRY_ID } from '../MyOnboardingAdaptiveCardExtension';
+import * as strings from 'MyLeadersAdaptiveCardExtensionStrings';
+import { IMyLeadersAdaptiveCardExtensionProps, IMyLeadersAdaptiveCardExtensionState, QUICK_VIEW_REGISTRY_ID } from '../MyLeadersAdaptiveCardExtension';
 
-export class CardView extends BaseImageCardView<IMyOnboardingAdaptiveCardExtensionProps, IMyOnboardingAdaptiveCardExtensionState> {
+export class CardView extends BaseImageCardView<IMyLeadersAdaptiveCardExtensionProps, IMyLeadersAdaptiveCardExtensionState> {
+  /**
+   * Buttons will not be visible if card size is 'Medium' with Image Card View.
+   * It will support up to two buttons for 'Large' card size.
+   */
   public get cardButtons(): [ICardButton] | [ICardButton, ICardButton] | undefined {
     return [
       {
@@ -28,16 +30,16 @@ export class CardView extends BaseImageCardView<IMyOnboardingAdaptiveCardExtensi
   public get data(): IImageCardParameters {
     return {
       primaryText: strings.PrimaryText,
-      imageUrl: "https://reckittstorage.blob.core.windows.net/viva-connections-icons/onboarding-card.png",
+      imageUrl: require('../assets/MicrosoftLogo.png'),
       title: this.properties.title
     };
   }
 
   public get onCardSelection(): IQuickViewCardAction | IExternalLinkCardAction | undefined {
     return {
-      type: 'QuickView',
+      type: 'ExternalLink',
       parameters: {
-        view: QUICK_VIEW_REGISTRY_ID
+        target: 'https://www.bing.com'
       }
     };
   }

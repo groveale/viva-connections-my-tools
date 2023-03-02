@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/adaptive-card-extension-manifest.schema.json",
-  "id": "dac548bd-5bb0-47fe-b59e-b911b5cc938f",
-  "alias": "MyOnboardingAdaptiveCardExtension",
+  "id": "697ffe14-4c62-4473-be8b-865c1b2f7e10",
+  "alias": "MyLeadersAdaptiveCardExtension",
   "componentType": "AdaptiveCardExtension",
 
   // The "*" signifies that the version should be taken from the package.json
@@ -16,12 +16,14 @@
   "preconfiguredEntries": [{
     "groupId": "bd067b1e-3ad5-4d5d-a5fe-505f07d7f59c", // Dashboard
     "group": { "default": "Dashboard" },
-    "title": { "default": "MyOnboarding" },
-    "description": { "default": "MyOnboarding description" },
-    "officeFabricIconFontName": "Balloons",
+    "title": { "default": "MyLeaders" },
+    "description": { "default": "MyLeaders description" },
+    "officeFabricIconFontName": "SharePointLogo",
+    "cardSize": "Large",
     "properties": {
-      "title": "MyOnboarding"
-    },
-    "cardSize": "Medium"
+      "title": "MyLeaders",
+      "description": "MyLeaders description",
+      "iconProperty": "" // Default to sharepointlogo
+    }
   }]
 }

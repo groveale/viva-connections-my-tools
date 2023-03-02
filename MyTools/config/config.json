@@ -65,6 +65,14 @@
           "manifest": "./src/adaptiveCardExtensions/myOnboarding/MyOnboardingAdaptiveCardExtension.manifest.json"
         }
       ]
+    },
+    "my-leaders-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/myLeaders/MyLeadersAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/myLeaders/MyLeadersAdaptiveCardExtension.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -76,6 +84,7 @@
     "MyCommuteAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myCommute/loc/{locale}.js",
     "MyHelpAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myHelp/loc/{locale}.js",
     "MyPraiseAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myPraise/loc/{locale}.js",
-    "MyOnboardingAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myOnboarding/loc/{locale}.js"
+    "MyOnboardingAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myOnboarding/loc/{locale}.js",
+    "MyLeadersAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myLeaders/loc/{locale}.js"
   }
 }

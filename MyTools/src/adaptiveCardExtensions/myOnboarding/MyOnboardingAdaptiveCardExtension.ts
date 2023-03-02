@@ -3,12 +3,14 @@ import { BaseAdaptiveCardExtension } from '@microsoft/sp-adaptive-card-extension
 import { CardView } from './cardView/CardView';
 import { QuickView } from './quickView/QuickView';
 import { MyOnboardingPropertyPane } from './MyOnboardingPropertyPane';
+import dummyOnboardingData from './quickView/template/QuickView.data.json'
 
 export interface IMyOnboardingAdaptiveCardExtensionProps {
   title: string;
 }
 
 export interface IMyOnboardingAdaptiveCardExtensionState {
+  onboardingData: object
 }
 
 const CARD_VIEW_REGISTRY_ID: string = 'MyOnboarding_CARD_VIEW';
@@ -21,7 +23,9 @@ export default class MyOnboardingAdaptiveCardExtension extends BaseAdaptiveCardE
   private _deferredPropertyPane: MyOnboardingPropertyPane | undefined;
 
   public onInit(): Promise<void> {
-    this.state = { };
+    this.state = { 
+      onboardingData: dummyOnboardingData.onboardingData
+    };
 
     this.cardNavigator.register(CARD_VIEW_REGISTRY_ID, () => new CardView());
     this.quickViewNavigator.register(QUICK_VIEW_REGISTRY_ID, () => new QuickView());
