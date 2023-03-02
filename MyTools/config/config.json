@@ -73,6 +73,14 @@
           "manifest": "./src/adaptiveCardExtensions/myLeaders/MyLeadersAdaptiveCardExtension.manifest.json"
         }
       ]
+    },
+    "my-requests-adaptive-card-extension": {
+      "components": [
+        {
+          "entrypoint": "./lib/adaptiveCardExtensions/myRequests/MyRequestsAdaptiveCardExtension.js",
+          "manifest": "./src/adaptiveCardExtensions/myRequests/MyRequestsAdaptiveCardExtension.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -85,6 +93,7 @@
     "MyHelpAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myHelp/loc/{locale}.js",
     "MyPraiseAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myPraise/loc/{locale}.js",
     "MyOnboardingAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myOnboarding/loc/{locale}.js",
-    "MyLeadersAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myLeaders/loc/{locale}.js"
+    "MyLeadersAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myLeaders/loc/{locale}.js",
+    "MyRequestsAdaptiveCardExtensionStrings": "lib/adaptiveCardExtensions/myRequests/loc/{locale}.js"
   }
 }
