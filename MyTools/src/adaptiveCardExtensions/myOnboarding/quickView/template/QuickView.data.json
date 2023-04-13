@@ -6,7 +6,7 @@
         "DescriptionText": "I see you're new here. Let's get you set up with the basics. I've also provided you with some useful links too.",
         "Steps": {
             "Step1": {
-                "Title": "Join the Yammer Community",
+                "Title": "Join the Workplace Community",
                 "Description": "Say hello to your new colleagues",
                 "ButtonText": "Get Started",
                 "ButtonLink": "https://wwww.yammer.com"
@@ -18,10 +18,10 @@
                 "ButtonLink": "https://gbr.delve.office.com/"
             },
             "Step3": {
-                "Title": "Select your benefits",
-                "Description": "Choose your employee benefits.",
-                "ButtonText": "Select Benefits",
-                "ButtonLink": "https://www.microsoft.com"
+                "Title": "Get upto speed",
+                "Description": "Complete your Onboarding training",
+                "ButtonText": "View Training",
+                "ButtonLink": "https://teams.microsoft.com/_#/tab::7d7fe6a8-1fb7-4330-bd51-ce3d8190617a/General?threadId=19:yzZ3QW3vIER1cgEj7AIqudyzKwJ58WWqh0CG2YqFRWE1@thread.tacv2&ctx=channel"
             }
         },
         "UsefulLinks": {

@@ -4,7 +4,7 @@ define([], function() {
     "GroupName": "Configuration",
     "TitleFieldLabel": "Card Title",
     "IconPropertyFieldLabel": "Card Icon",
-    "CardViewText": "Create a new Help Ticket",
+    "CardViewText": "Create a new Help Ticket in ServiceNow",
     "NewFormHeader": "Create a help ticket",
     "ConfirmFormHeader": "Please confirm your data",
     "IncidentNumberLabel": "Request/Incident number",
